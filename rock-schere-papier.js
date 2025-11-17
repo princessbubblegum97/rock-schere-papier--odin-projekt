@@ -1,6 +1,7 @@
 
 
 console.log("***Rock-Schere-Papier Projekt***")
+console.log("* GAME, V1 *")
 console.log(" ")
 
 
@@ -84,9 +85,57 @@ let computerScore  = 0
 // Step 5: Write the logic to play a single round
 
 console.log(" ")
+console.log("* GAME, V2 *")
 console.log("*Single-round logic*")
 
 
+
+
+
+
+
+// Step 6: Write the logic to play the entire game
+
+// console.log(" ")
+// console.log(" * Entire game logic * ")
+
+// let round = 1
+
+// function playGame(b) {
+
+
+//     b = playRound()
+      
+
+    
+
+
+
+
+
+  
+
+
+   
+// }
+
+
+
+// // console.log(playGame())
+
+
+
+console.log("")
+
+
+// let text = "";
+
+let round = 1;
+while (round <= 5) {
+//   text += "The number is " + i + "<br>";
+
+
+  console.log("round:" , round)
 function playRound( humanChoice , computerChoice ) {
 
   
@@ -173,6 +222,12 @@ else if(humanChoice == "schere" && computerChoice == "papier"){
     humanScore++
 
 }
+
+
+else{
+    console.log("Error 404, results not discovered.") 
+
+}
     
    
 
@@ -194,12 +249,17 @@ console.log(humanSelection)
 
 console.log(" ")
 console.log(" ~~Score-board~~ ")
-console.log(humanScore)
-console.log(computerScore)
+console.log("human-score:" , humanScore)
+console.log("computer-score:" , computerScore)
+console.log(" ")
+console.log(" ")
 
 
 
 
+  round++;
+
+}
 
 
 
