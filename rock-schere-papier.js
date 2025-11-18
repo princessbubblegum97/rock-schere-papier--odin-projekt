@@ -50,7 +50,7 @@ console.log(acquireComputerChoice())
 console.log("**Human choice**")
 
 
-function acquireHumanChoice( sign = prompt("Select your move wisely? ") ) {
+function acquireHumanChoice( sign = prompt("Select your move wisely:  ") ) {
     
     if (sign == "rock" ||
         sign == "papier" || 
@@ -262,4 +262,39 @@ console.log(" ")
 }
 
 
+
+        console.log("************************************************************************") 
+        console.log("** FINAL WINNER **") 
+
+
+
+if(humanScore > computerScore){
+
+
+        console.log("** Human reigns **") 
+
+
+
+
+}
+
+
+
+else if(computerScore > humanScore) {
+
+        console.log("** Computer reigns **") 
+
+
+
+}
+
+
+
+else if(computerScore == humanScore) {
+
+        console.log("** Human and Computer reign **") 
+
+
+
+}
 
