@@ -50,7 +50,9 @@ console.log(acquireComputerChoice())
 console.log("**Human choice**")
 
 
-function acquireHumanChoice( sign = prompt("Select your move wisely:  ") ) {
+function acquireHumanChoice( sign = prompt("Select your move wisely:  ").toLowerCase() ) {
+
+    // ALLOW FOR USER ENTRIES TO BE CASE INSENSITIVE
     
     if (sign == "rock" ||
         sign == "papier" || 
